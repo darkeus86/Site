@@ -1,0 +1,41 @@
+@font-face{
+    font-family: Kenyan Coffee Regular;
+    src: url(15357.otf);
+}
+
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;   
+}
+
+.header{
+        width: 100%;
+        position: fixed;
+        display: flex;
+        text-align: center;
+        align-items: top;
+        align-content: center; 
+        justify-content: center; 
+        overflow: auto;   
+        font-family: Kenyan Coffee Regular;
+        font-size: 400%;
+        background-image: url("985579237.jpg"); 
+        z-index: 2;
+}
+
+.block {
+        text-align: center;
+        font-family: Kenyan Coffee Regular;
+        display: block;
+        border: none;
+        font-size: 32pt;
+        z-index: 1;
+}

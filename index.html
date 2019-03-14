@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title> Фраза дня </title>
+	<link href="index.css" rel="stylesheet">
+	<link rel="shortcut icon" href="1200px-Question_mark.svg.png" type="image/png">
+</head>
+<body background="985579237.jpg">
+	<div id="header" class="header">
+		<p>Хочешь узнать фразу, которая поможет тебе сегодня?</p>
+	</div>
+	<div class="parent">
+    	<div class="block" id="clickbait" title = "На меня можно нажать еще раз">
+			 Кликни, чтобы получить совет!
+			<script>
+			var phrases = ["Семь раз отмерь, один раз отрежь", "Без тудра не выловишь рыбку из пруда", "Пользуйтесь, но не злоупотребляйте - таково правило мудрости"];
+			clickbait.onclick = function(){
+				var min = 0;
+				var max = phrases.length - 1;
+				var i = min + Math.floor(Math.random()*(max+1-min))
+				clickbait.innerText = phrases[i];
+			}
+			</script>
+		</div>
+	</div>
+</body>
+</html>
